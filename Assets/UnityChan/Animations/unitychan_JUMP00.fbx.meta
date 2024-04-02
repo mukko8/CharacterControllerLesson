@@ -1991,7 +1991,7 @@ ModelImporter:
           postInfinity: 2
           rotationOrder: 4
       events:
-      - time: 0.22796798
+      - time: 0.20796798
         functionName: OnJumpStart
         data: 
         objectReferenceParameter: {instanceID: 0}

@@ -6,6 +6,7 @@ public class CharMove : MonoBehaviour
 {
     Animator animator;
     CharacterController cc;
+    AudioSource uniVoice;
 
     Vector3 dir=Vector3.zero;
     public float gravity=20.0f;
@@ -16,6 +17,7 @@ public class CharMove : MonoBehaviour
     {
         animator=GetComponent<Animator>();
         cc=GetComponent<CharacterController>();
+        uniVoice=GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -48,5 +50,6 @@ public class CharMove : MonoBehaviour
     public void OnJumpStart(){
         //足が離れたらトランスフォームを上方に移動する
         dir.y=jumpPower;
+        uniVoice.Play();
     }
 }
