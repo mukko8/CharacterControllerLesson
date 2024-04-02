@@ -44,4 +44,9 @@ public class CharMove : MonoBehaviour
             dir.y=0;
         }
     }
+    //ジャンプモーションで地面から足が離れたときに呼ばれるイベント
+    public void OnJumpStart(){
+        //足が離れたらトランスフォームを上方に移動する
+        dir.y=jumpPower;
+    }
 }
